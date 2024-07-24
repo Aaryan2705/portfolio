@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/240ca7d066.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/log.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>Hi, I'm <span>Aaryan Kumar</span><br>From <span id="IN">IN</span><span id="D">D</span><span id="IA">IA</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Aaryan Kumar, a Computer Science Engineering student at VIT Bhopal with a CGPA of 8.37. I’m proficient in C++, Python, SQL, Dart, and JavaScript, with experience in Flutter, NodeJS, and Firebase. I’ve developed apps like a Hostel Management system and a Job Portal, and interned at Fuerte Developers improving web and app performance.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Programming Languages</span><br>C++, Python, SQL, HTML, CSS, Dart, JavaScript</li>
+                        <li>
+                            <span>Certifications</span><br>
+                            Applied Machine Learning in Python (Coursera)<br>
+                            MERN Full Stack Development<br>
+                            Google Cloud Computing Foundations Program<br>
+                            Salesforce CRM
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>October 2023 - January 2024</span><br>Flutter Intern at Fuerte Developers</li>
+                        <li><span>Coding Practice</span><br>Solved 250+ coding questions on LeetCode and GeeksforGeeks</li>
+                    </ul>
+                    
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Ongoing</span><br>B. Tech (CSE) from Vellore Institute of Technology - VIT Bhopal<br><span>CGPA: 8.37/10</span></li>
+                        <li><span>2021</span><br>Class XII from Kendriya Vidyalaya Mumbai<br><span>Percentage: 87.4%</span></li>
+                        <li><span>2018</span><br>Class X from Navy Children School Visakhapatnam<br><span>Percentage: 77.2%</span></li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/vaaigg.png">
+                <div class="layer">
+                    <h3>VOICE ASSISTANT AND IMAGE GENERATION APP</h3>
+                    <p>The app help you to communicate via voice and get the desired result , it also helps in generation of AI image.</p>
+                    <a href="https://github.com/Aaryan2705/VAAIG"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w22.png">
+                <div class="layer">
+                    <h3>CONTENT GENIE</h3>
+                    <p>CONTENT-GENIE is a content creation platform using JavaScript, Node.js, and React, designed for efficient text generation, responsive design, and streamlined tools for diverse content needs.</p>
+                    <a href="https://github.com/Aaryan2705/CONTENT-GENIE-"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w3333.png">
+                <div class="layer">
+                    <h3>VIT Bhopal Hostel Management</h3>
+                    <p>A platform for efficiently managing room maintenance and addressing complaints related to Wi-Fi, carpentry, and other facilities.</p>
+                    <a href="https://github.com/Aaryan2705/HOSTEL-MANGEMENT-SYSTEM"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href=></a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p>
+                    <i class="fas fa-paper-plane"></i>
+                    <a href="http://t.me/Snowy_secret27" target="_blank">Aaryan@27</a>
+                </p>
+                <p><i class="fa-solid fa-phone"></i></i>+91 7644030166</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a> -->
+                    <a href="https://www.instagram.com/aaryan3099/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Aaryan2705" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/Aaryan2705/" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.geeksforgeeks.org/user/aaryankuarep/" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/aaryan-kumar-98b180265/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Aaryan-kumar.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aaryan Kumar <i ></i> <a href=""></a></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '< add your own link here >'; // add your own app script link here
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+</body>
+</html>
